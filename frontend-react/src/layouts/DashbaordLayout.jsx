@@ -118,7 +118,7 @@ const DashboardLayout = () => {
                       </NavLink>
 
                       {!sidebarOpen && (
-                        <div className="absolute left-16 top-1/2 -translate-y-1/2 bg-slate-900 border border-slate-700 text-slate-200 px-3 py-1.5 rounded-lg text-xs font-medium opacity-0 group-hover:opacity-100 transition shadow-xl whitespace-nowrap pointer-events-none z-50">
+                        <div className=" absolute left-16 top-1/2 -translate-y-1/2 bg-slate-900 border border-slate-700 text-slate-200 px-3 py-1.5 rounded-lg text-xs font-medium opacity-0 group-hover:opacity-100 transition shadow-xl whitespace-nowrap pointer-events-none z-50">
                           {item.title}
                         </div>
                       )}
@@ -252,7 +252,7 @@ const DashboardLayout = () => {
         )}
 
         {/* Dynamic Inner Component Content Hub */}
-        <main className="flex-1 p-4 sm:p-6 overflow-y-auto">
+        <main className="flex-1 p-4 -z-10 sm:p-6 overflow-y-auto">
           <div className="min-h-[calc(100vh-112px)]">
             <Outlet />
           </div>

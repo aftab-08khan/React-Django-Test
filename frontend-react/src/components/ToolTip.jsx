@@ -1,6 +1,6 @@
 const Tooltip = ({ title, sidebarOpen, children }) => {
   return (
-    <div className="relative group">
+    <div className="relative group z-30">
       {children}
 
       {!sidebarOpen && (
